@@ -4,7 +4,7 @@
     font-size:2rem;
 } */
 
-body { 
+body {
     /* ask about this in class */
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to bottom, #eeeeee, #ffffff);
@@ -22,11 +22,16 @@ header {
 header h1 {
     padding: 0.5rem;
     line-height: 140%;
+
 }
 
 nav {
     font-weight: bold;
     background-color: #f3f3f3;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
 }
 
 h2 {
@@ -48,6 +53,7 @@ footer {
     font-size: .70rem;
     font-style: italic;
     text-align: center;
+    padding: 1rem;
 }
 
 #wrapper {
@@ -57,7 +63,54 @@ footer {
     background-color: #ffffff;
     min-width: 960px;
     max-width: 2048px;
-    box-shadow: 0px 3px 3px rgb(66,66,66,0.3);
+    box-shadow: 0px 3px 3px rgb(66, 66, 66, 0.3);
+}
+
+
+h1 {
+    background-image: url(utahtechimages/utahtechlogo.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding-left: 1em;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: #003058;
+}
+
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(utahtechimages/homehero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#studenthero {
+    height: 300;
+    background-image: url(utahtechimages/studenthero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#facultyhero {
+    height: 300px;
+    background-image: url(utahtechimages/facultyhero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 /* //// */
