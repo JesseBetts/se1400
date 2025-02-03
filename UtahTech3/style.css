@@ -112,5 +112,12 @@ main {
 nav a {
     text-decoration: none;
 }
+#studenthero {
+    height: 300px;
+    background-image: url("utahtechimages/studenthero.jpg"); /* Ensure this image exists */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /* //// */
