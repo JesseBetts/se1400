@@ -97,13 +97,13 @@ main {
     background-color: #ffffff;
 }
 
-#homehero {
+/* #homehero {
     height: 300px;
     background-image: url(utahtechimages/homehero.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
+    background-repeat: no-repeat; */
+/* } */
 
 #homehero, #studenthero, #facultyhero {
     grid-column: 2 / -2;
