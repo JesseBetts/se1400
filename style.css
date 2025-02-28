@@ -1,51 +1,145 @@
 #container {
-    width:100%;
+    width: 100%;
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    /* grid-template-rows: minmax(0px, 75px) auto minmax(0px, auto); */
+    
+    margin: 0;
+}
+
+#logo {
+    background-image: url(images/logo.png);
+    height: 75px;
+    grid-column: 2;
+    grid-row: 1;
+    width: auto;
+    z-index: 20;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bar {
-    grid-column:1/9;
-    background-color:rgba(62, 35, 6, .75);
+    grid-column: 1/9;
+    background-color: rgba(105, 61, 14, 0.45);
+    /* background-color: rgba(117, 68, 15, 0.45); */
     /* background-color: #3E2306; */
     height: 75px;
-    grid-row:1/2;
-    z-index:10;
+    grid-row: 1/2;
+    z-index: 10;
 }
 
 #photoMain {
     background-image: url(images/caleb.png);
     grid-column: 1/9;
     height: 700px;
-    grid-row:1/2;
+    grid-row: 1/2;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.opacity {
+    grid-column: 1/9;
+    grid-row: 1/2;
+    text-align: center;
+    /* z-index: 10; */
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
 .main {
     background-color: rgba(211, 129, 23, 0.3);
-    grid-column:   2/8;
-    height: 1000px;
+    grid-column: 2/8;
+    height: 1500px;
+    text-align: center;
+
 }
 
 h1 {
-    /* color: whitesmoke; */
-    text-align:center;
+    color: whitesmoke;
+    text-align: center;
+    z-index: 11;
     margin: 0;
+    padding-top: 50px;
+    font-size: 3em;
     /* font-family: garamond; */
-}
-
-h2 {
-    text-align:center;
 }
 
 .para1 {
     text-align: center;
-    padding: 20px;
-    /* margin: 50px; */
-    width: 50%;
-    font-size:2em;
+    padding: 0 200px 0 200px;
+    grid-column: 3/6;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+header {
+    display: grid;
+}
+
+button {
+    margin-top: 150px;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: rgba(237, 234, 227, 0.40);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+.orangebox {
+    background-color: #DA8F3E;
+    width: 1250px;
+    height: 400px;
+    z-index: 12;
+    position: relative;
+    left: -100px;
+    margin-top: 50px;
+
+}
+
+.orangebox img {
+    margin: 40px;
+    margin-top: 15px;
+    padding-top: 15px;
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+}
+
+/* .orangebox push {
+    margin: 12px;
+    object-fit: cover;
+    background-color: black;
+} */
+
+.testimonial {
+    display: flex;
+   
+}
+
+.testimonial img {
+    margin-top:30px;
+    height: auto;
+    width: 535px;
+    object-fit: cover;
+    background-color:navy;
+    padding-top:20px;
+    padding-bottom:30px;
+}
+
+.brownbox {
+    margin-top:-350px;
+    height: 300px;
+    width: 550px;
+    object-fit: cover;
+    background-color:rgb(128, 19, 201);
+    z-index: 17;
+    margin-left:500px;
 }
 
 
