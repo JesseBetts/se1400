@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
     /* grid-template-rows: minmax(0px, 75px) auto minmax(0px, auto); */
-    
+
     margin: 0;
 }
 
@@ -25,6 +25,8 @@
     height: 75px;
     grid-row: 1/2;
     z-index: 10;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 #photoMain {
@@ -96,7 +98,7 @@ h2 {
     position: relative;
     left: -100px;
     margin-top: 50px;
-    
+
 
 }
 
@@ -105,9 +107,9 @@ h2 {
     margin-top: 15px;
     /* padding-top: 15px;
      */
-     padding: 15px 15px 0 15px;
-    
-     width: 275px;
+    padding: 15px 15px 0 15px;
+
+    width: 275px;
     height: 275px;
     object-fit: cover;
 }
@@ -116,7 +118,7 @@ h2 {
     margin-left: -150px;
     object-fit: cover;
 
-    
+
     padding: 10px;
     font-size: 1.5em;
     background-color: rgba(237, 234, 227, 0.40);
@@ -127,69 +129,66 @@ h2 {
 
 .testimonial {
     display: flex;
-   
+
 }
 
 
 .brownbox img {
-    margin-top:-300px;
+    margin-top: -300px;
     height: auto;
     width: 560px;
     z-index: 17;
-    margin-left:490px;
+    margin-left: 490px;
 }
 
 .testimonial h2 {
-    color: black; 
-    font-size: 2em; 
-    margin-left:160px;
-    margin-top:75px;
-    z-index:25;
+    color: black;
+    font-size: 2em;
+    margin-left: 160px;
+    margin-top: 75px;
+    z-index: 25;
 }
 
 .testimonial img {
-    margin-top:30px;
+    margin-top: 30px;
     height: auto;
     width: 535px;
     object-fit: cover;
-    background-color:#3A4F50;
-    padding-top:20px;
-    padding-bottom:30px;
+    background-color: #3A4F50;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .brownbox p {
     text-align: center;
     font-size: 1.5em;
-    max-width:50%;
-    margin-left:510px;
+    max-width: 50%;
+    margin-left: 510px;
     margin-top: -280px;
 }
 
-nav {
-    font-weight: bold;
-    font-size: 1.2em;
-}
 
-nav a {
-    color: #FFFFFF;
+
+.bar a {
     padding: 1rem 0.5rem;
-    display:block;
+    display: block;
     text-decoration: none;
+    color: whitesmoke;
 }
 
 
 
-nav ul {
+.bar ul {
     padding: 0px;
     margin: 0px;
-    list-style-type:none;
+    list-style-type: none;
     justify-content: center;
     display: flex;
 }
 
-nav ul li {
+.bar ul li {
     width: 180px;
-    margin-left:-25px;
+    margin-left: -25px;
 }
 
 
