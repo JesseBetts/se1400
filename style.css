@@ -168,7 +168,7 @@ nav a:hover {
 
 @media only screen and (max-width: 1100px) {
     #wrapper {
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150)) minmax(0px, 1fr);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
 
     }
 }
@@ -198,17 +198,20 @@ nav a:hover {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    header h1 {
+@media only screen and (max-width: 600px)
+ {
+    header h1 
+    {
         background-image:none;
         text-align:center;
-        nav {
+    }
+        nav 
+        {
             grid-row:2/3;
             grid-column: 1/9;
         }
-        #homehero, #studenthero, #facultyhero {
-            display:none;
+        #homehero, #studenthero, #facultyhero 
+        {
+            display: none;
         }
     }
-
-}
