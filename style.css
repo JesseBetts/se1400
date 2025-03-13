@@ -1,217 +1,253 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #eeeeee, #ffffff);
-    background-attachment: fixed;
-    color: #666666;
-
-}
-
-header {
-    background-color: #003058;
-    color: #FFFFFF;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    grid-column: 2/8;
-    grid-row: 1 /2;
-    margin: 0;
-    padding: 0.5rem;
-}
-
-header h1 {
-    padding: 0.5rem;
-    line-height: 140%;
-    margin: 0;
-}
-
-header a {
-    text-decoration:none;
-    color:#FFFFFF;
-}
-
-nav {
-    font-weight: bold;
-    background-color: #424242;
-    /* padding-top: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem; */
-    grid-row: 2/3;
-    grid-column: 2 / -2;
-    position:sticky;
-    top:0;
-}
-
-h2 {
-    color: #424242;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-dt {
-    font-weight: bold;
-    color: #003058;
-}
-
-.ut {
-    font-weight: bold;
-    color: #BA1C21;
-}
-
-footer {
-    font-size: .70rem;
-    font-style: italic;
-    text-align: center;
-    padding: 1rem;
-    grid-row:5/6;
-    grid-column: 2/-2;
-}
-
-#wrapper {
+#container {
+    width: 100%;
     display: grid;
-    grid-auto-rows: minmax(0px, auto);
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 200px)) minmax(0px, 1fr);
+    /* grid-template-rows: minmax(0px, 75px) auto minmax(0px, auto); */
+
+    margin: 0;
 }
 
-#bluebar {
-    background-color:#003058;
-    grid-row:1/2;
-    grid-column:1/-1;
+#logo {
+    background-image: url(images/logo.png);
+    height: 75px;
+    grid-column: 2;
+    grid-row: 1;
+    width: auto;
+    z-index: 20;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#greybar{
-    background-color: #424242;
-    grid-row:2/3;
-    grid-column:1/-1;
+.bar {
+    grid-column: 1/-1;
+    background-color: rgba(105, 61, 14, 0.45);
+    height: 75px;
+    grid-row: 1/2;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#photoMain {
+    background-image: url(images/caleb.png);
+    grid-column: 1/-1;
+    height: 700px;
+    grid-row: 1/2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.opacity {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.main {
+    grid-column: 2/8;
+    height: 1000px;
+    text-align: center;
 
 }
 
 h1 {
-    background-image: url(utahtechimages/utahtechlogo.svg);
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    padding-left: 1em;
-    margin-bottom: 0;
+    color: whitesmoke;
+    text-align: center;
+    z-index: 11;
+    margin: 0;
+    padding-top: 50px;
+    font-size: 3em;
+    /* font-family: garamond; */
 }
 
-h3 {
-    color: #003058;
+/* this is the part I need to ask about in class*/
+
+.para1 {
+    text-align: center;
+    padding: 0 50px 0 50px;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
 
-main {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    grid-row: 4/5;
-    grid-column: 2/-2;
-    background-color: #ffffff;
+header {
+    display: grid;
 }
 
-/* #homehero {
-    height: 300px;
-    background-image: url(utahtechimages/homehero.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-/* } */
+button {
+    /* here too */
+    margin-top: 150px;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: rgba(237, 234, 227, 0.40);
+    cursor: pointer;
 
-#homehero, #studenthero, #facultyhero {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-#homehero {
-    background-image: url(utahtechimages/homehero.jpg);
-}
-#studenthero {
-    background-image: url(utahtechimages/studenthero.jpg);
-}
-#facultyhero {
-    background-image: url(utahtechimages/facultyhero.jpg);
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2em;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
 }
 
 
-nav a {
-    color: #FFFFFF;
-    padding: 1rem 0rem;
-    display:block;
-    text-align:center;
-    text-decoration: none;
+.orangebox {
+    background-color: #DA8F3E;
+    height: 400px;
+    z-index: 12;
+    /* position: relative; */
+    /* left: -100px; */
+    margin-top: 50px;
+
+
 }
 
-main img {
-    float: right;
-    padding-left: 2rem;
-}
-
-nav ul {
-    margin: 0px;
-    padding: 0px;
+.container-orange {
+    gap: 50px;
     display: flex;
-    flex-flow: row nowrap;
-    list-style-type:none;
-}
-
-nav ul li {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
+    padding: 0 20px;
 }
 
-nav a:hover {
-    background-color: #BA1C21;
+.background-item {
+    height: 275px;
+    width: 275px;
+    /* background-size: cover; */
+    background-position: center;
+    position: relative;
+    /*     
+    margin-top: 25px;
+    width: 275px;
+    height: 275px;
+    object-fit: cover; */
+
 }
 
-@media only screen and (max-width: 1100px) {
-    #wrapper {
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
-
-    }
+#portates {
+    background-image: url("images/family.png");
 }
 
-@media only screen and (max-width: 900px) {
-    nav {
-        grid-row: 2/3;
-        grid-column: 1/5;
-        position:static;
-    }
-
-    nav ul {
-        flex-flow: column nowrap;
-            }
-
-    #homehero, #studenthero, #facultyhero {
-        grid-row:2/3;
-        grid-column:5/8;
-        height:auto;
-        }
-
-    main img {
-        float: none;
-        width: 100%;
-        height: auto;
-        padding-left: 0px;
-    }
+#events {
+    background-image: url('images/graduation.png');
 }
 
-@media only screen and (max-width: 600px)
- {
-    header h1 
-    {
-        background-image:none;
-        text-align:center;
-    }
-        nav 
-        {
-            grid-row:2/3;
-            grid-column: 1/9;
-        }
-        #homehero, #studenthero, #facultyhero 
-        {
-            display: none;
-        }
-    }
+#weddings {
+    background-image: url('images/marriage.png');
+}
+
+/*
+    useless?
+.orangebox img {
+    margin-top: 25px;
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    } */
+.orangebox button {
+    width: 160px;
+    height: 50px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    background-color: rgb(58, 79, 80,.7);
+    top:25%;
+    font-size: 1.5em;
+}
+
+.orangebox div {
+    display: flex;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    flex-direction: column;
+
+}
+.brownbox {
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    display: flex;
+    margin-top: -350px;
+}
+
+.brownbox img {
+    width: 52.5%; 
+    height: auto;
+    z-index: 50;
+    object-fit: cover;
+
+}
+
+.brownbox h2 {
+    color: black;
+    font-size: 2em;
+    margin-right: 20%;
+    z-index: 25;
+}
+
+.testimonial img {
+    margin-top: 30px;
+    height: auto;
+    width: 52.5%;
+    object-fit: cover;
+    background-color: #3A4F50;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.brownbox p {
+    text-align: center;
+    font-size: 1.5em;
+    max-width: 50%;           
+    z-index: 620;            
+    color: black;  
+    position: relative;    
+    top: -300px;       
+}
+
+
+
+.bar a {
+    padding: 1rem 0.5rem;
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+.bar ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+}
+
+.bar ul li {
+    width: 180px;
+    margin-left: -25px;
+}
+
+
+/* . if its a class # if its an id */
