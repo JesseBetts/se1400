@@ -279,7 +279,7 @@ p,
 #gretaphoto,
 #ameliaphoto {
     height: auto;
-    width: 1fr;
+    width: 100%;
     grid-row: 2;
 }
 
@@ -304,7 +304,7 @@ img {
 
 }
 
-#myInput {
+.myInput {
     margin-top: 15px;
 }
 
@@ -334,7 +334,7 @@ img {
 
 .event-main p {
     font-size: .8em;
-    width: 1fr;
+    width: 100%;
 }
 
 #label-container {
@@ -345,17 +345,17 @@ img {
     font-size: 1.2rem;
 }
 
-#smallline {
+.smallline {
     height: 5px;
-    width: 3fr;
+    width: 100%;
     margin-top: 10px;
     background-color: rgba(105, 61, 14, 0.90);
     margin-bottom: 0px;
 }
 
-#line {
+.line {
     height: 10px;
-    width: 2fr;
+    width: 100%;
     margin-top: 10px;
     background-color: #3A4F50;
     margin-bottom: 0px;
@@ -399,7 +399,7 @@ color:gray;
     #invisible-line {
         display: block;
         height: 10px;
-        width: 2fr;
+        width: 100%;
         margin-top: 10px;
         background-color: #3A4F50;
         margin-bottom: 0px;
@@ -432,7 +432,6 @@ color:gray;
     .bar-list {
         display: block;
         z-index: 2003;
-        /* position: relative; */
         top: 300px;
         background-color: rgba(105, 61, 14, 0.5);
     }
@@ -633,8 +632,7 @@ color:gray;
         font-size: 1.2em;
         top: 0;
         height: 60px;
-        left: 50%;
-        transform: translateX(-50%); */
+       */
     }
 
    
