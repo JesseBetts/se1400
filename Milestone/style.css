@@ -1,0 +1,699 @@
+#wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 200px)) minmax(0px, 1fr);
+
+    margin: 0;
+}
+
+
+
+
+
+#logo {
+    background-image: url(images/logo.png);
+    height: 55px;
+    grid-column: 2;
+    grid-row: 1;
+    width: auto;
+    z-index: 20;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bar {
+    grid-column: 1/-1;
+    background-color: rgba(105, 61, 14, 0.45);
+    grid-row: 1/2;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#photoMain {
+    background-image: url(images/caleb.png);
+    grid-column: 1/-1;
+    height: 700px;
+    grid-row: 1/2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.opacity {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    /* Match the height of #photoMain */
+    width: 100%;
+}
+
+.main {
+    grid-column: 2/8;
+    height: 1000px;
+    flex: 1;
+    text-align: center;
+
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    z-index: 11;
+    margin: 0;
+    padding-top: 50px;
+    font-size: 3em;
+}
+
+
+.para1 {
+    text-align: center;
+    padding: 0 50px 0 50px;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+header {
+    display: grid;
+}
+
+button {
+    margin-top: 150px;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: rgba(237, 234, 227, 0.40);
+
+}
+
+
+
+body {
+    background-color: #F5F5DC;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2em;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+}
+
+
+
+.orangebox {
+    background-color: #A9C0D5;
+    height: 400px;
+    z-index: 12;
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+
+}
+
+.container-orange {
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.orangebox h2 {
+    text-align: center;
+}
+
+.background-item {
+    height: 275px;
+    width: 275px;
+    background-position: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+
+
+#portates {
+    background-image: url("images/family.png");
+}
+
+#events {
+    background-image: url('images/graduation.png');
+}
+
+#weddings {
+    background-image: url('images/marriage.png');
+}
+
+.orangebox button {
+    width: 160px;
+    height: 50px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    background-color: rgb(58, 79, 80, .7);
+    top: 25%;
+    font-size: 1.5em;
+}
+
+.orangebox div {
+    display: flex;
+}
+
+
+.bar a {
+    padding: 1rem 0.5rem;
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: background-color 0.5s ease-out;
+}
+
+
+.bar ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    height: 55px;
+
+}
+
+.bar ul li {
+    width: 180px;
+    margin-left: -25px;
+}
+
+
+
+
+
+
+
+.subgrid-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.testimonial img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    object-fit: cover;
+    background-color: #3A4F50;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+.brownbox h2 {
+    margin-left: 50px;
+}
+
+.brownbox p {
+    margin-left: 50px;
+    font-size: 1.5rem;
+    max-width: 600px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Overview page */
+#otherpages-opacity {
+    grid-column: 1/-1;
+    height: 55px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.overview-main {
+    padding: 30px;
+    margin-top: 55px;
+    background-color: #A9C0D5;
+    width: 100%
+}
+
+.overview-main,
+h2,
+.event-main {
+    padding-top: 0px;
+
+}
+
+.overview-main,
+p,
+.event-main {
+    grid-column: 3/7;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.event-main {
+    padding: 30px;
+    margin-top: 55px;
+}
+
+#gretaphoto,
+#ameliaphoto {
+    height: auto;
+    width: 100%;
+    grid-row: 2;
+}
+
+#mini-div,
+#mini-div-two {
+    margin-top: 50px;
+    display: flex;
+    gap: 70px;
+    text-align: center;
+}
+
+#mini-div p,
+#mini-div-two p {
+    font-size: 1.2rem;
+    width: 300px;
+
+}
+
+img {
+    height: auto;
+    width: 100%;
+
+}
+
+.myInput {
+    margin-top: 15px;
+}
+
+#booking-photo {
+    margin-bottom: 25px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.photo-item {
+    height: 200px;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gallery-title {
+    color: black;
+    padding-bottom: 10px;
+}
+
+.event-main p {
+    font-size: .8em;
+    width: 100%;
+}
+
+#label-container {
+    text-align: right;
+}
+
+.overview-main p {
+    font-size: 1.2rem;
+}
+
+.smallline {
+    height: 5px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(105, 61, 14, 0.90);
+    margin-bottom: 0px;
+}
+
+.line {
+    height: 10px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #3A4F50;
+    margin-bottom: 0px;
+
+}
+
+.book-now-no-margin {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#overview-details {
+    text-align: left;
+}
+
+#invisible-line {
+    display: none;
+}
+
+
+#extended {
+    margin-top: 200px;
+}
+
+footer {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+
+.orangebox-button {
+
+    background-color: rgba(58, 79, 80, 0.7);
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-size: 1.5em;
+}
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+    #mini-div,
+    #mini-div-two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #invisible-line {
+        display: block;
+        height: 10px;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #3A4F50;
+        margin-bottom: 0px;
+    }
+
+    #booking-photo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #F5F5DC;
+    }
+
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 1fr)) minmax(0px, 1fr);
+    }
+
+    .bar {
+        height: 50px;
+        top: 0;
+        z-index: 200;
+        background-color: transparent;
+    }
+
+    .bar-list {
+        display: block;
+        z-index: 2003;
+        top: 300px;
+        background-color: rgba(105, 61, 14, 0.5);
+    }
+
+    #home {
+        top: 0;
+        z-index: 2002;
+    }
+
+    #extended {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #photoMain {
+        width: 100%;
+        height: 300px;
+        grid-row: 1/2;
+    }
+
+    .opacity {
+        display: grid;
+        grid-column: 1/-1;
+
+        height: 300px;
+        grid-row: 1/2;
+
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .subgrid-container {
+        flex-direction: column;
+        grid-column: 1/-1;
+    }
+
+    .testimonial img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .brownbox {
+        margin-top: 20px;
+    }
+
+    .brownbox h2,
+    .brownbox p {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding: 0;
+        height: 40px;
+    }
+
+    .orangebox {
+        height: auto;
+        padding: 30px;
+    }
+
+    .orangebox button {
+        width: 120px;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    .orangebox div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .orangebox h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.8rem;
+    }
+
+    .main h2 {
+        margin-top: 75px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .main p {
+        font-size: 1.6rem;
+    }
+
+    .book-now {
+        margin-top: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #F5F5DC;
+    }
+
+
+
+    .book-now {
+        background-color: rgb(58, 79, 80, .50);
+    }
+
+    .gallery {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 1fr)) minmax(0px, 1fr);
+    }
+
+    #photoMain {
+        background-image: none;
+    }
+
+
+    /*
+    .bar {
+        
+}
+    
+    .bar-list {
+        background-color: #3A4F50;
+    }
+    
+    .bar ul {
+        margin-top:60px;
+        display:block;
+        justify-items: center;
+    }
+    
+    .bar ul li a{
+        background-color: #3A4F50;
+    }  
+    */
+
+
+    #logo {
+        display: none;
+    }
+
+
+
+    .opacity {
+        background-color: transparent;
+        height: 100px;
+    }
+
+    .subgrid-container {
+        flex-direction: column;
+    }
+
+    .testimonial img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .brownbox {
+        margin-top: 20px;
+    }
+
+    .brownbox h2,
+    .brownbox p {
+        margin-left: 0;
+    }
+
+    .otherpages-opacity {
+        display: None;
+        z-index: 9001;
+    }
+
+    /* #book-now {
+        display:flex;      
+    } */
+
+
+    h1 {
+        /* display:none; */
+        color: black;
+        padding-top: 20px;
+        background-color: transparent;
+
+        /*
+        z-index: 9000;
+        font-size: 1.2em;
+        top: 0;
+        height: 60px;
+       */
+    }
+
+
+
+
+    .orangebox {
+        height: auto;
+        padding: 30px;
+    }
+
+    .orangebox button {
+        width: 120px;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    .orangebox div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .orangebox h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.8rem;
+    }
+
+
+
+    .orangebox h2 {
+        padding: 0px;
+    }
+
+    .main p {
+        font-size: 1.6rem;
+    }
+
+    .brownbox h2 {
+        padding: 0px
+    }
+
+}
